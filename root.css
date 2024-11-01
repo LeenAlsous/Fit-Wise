@@ -122,9 +122,14 @@ hr {
   margin-right: 3%;
 }
 
-.greeting {
-  position: absolute;
-  color: #31413c;
+#greeting {
+  display: flex; /* Ensure the element is displayed */
+  visibility: visible; /* Ensure the element is visible */
+  z-index: 3;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 2%;
+  color: var(--blk-color);
 }
 
 .center-left {
