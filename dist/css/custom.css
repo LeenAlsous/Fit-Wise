@@ -1,0 +1,6 @@
+.main-sidebar {
+    background : linear-gradient(180deg, #a4d07f, #60b390);
+}
+[class*=sidebar-dark-] .sidebar a {
+    color: black;
+}
