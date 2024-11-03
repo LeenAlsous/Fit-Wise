@@ -4,3 +4,69 @@
 [class*=sidebar-dark-] .sidebar a {
     color: black;
 }
+/* .mainbar{
+    background : linear-gradient(180deg, #a4d07f, #60b390);
+  }
+  .font-weight-light{color: black;}
+  .d-block{ color: black;} */
+  .main-sidebar {
+    background : linear-gradient(180deg, #a4d07f, #60b390);
+}
+[class*=sidebar-dark-] .sidebar a {
+    color: black;
+}
+.font-weight-light{color: black;}
+    .d-block{ color: black;}
+    .edit-btn {
+        background-color: #ffd95b;
+        border: none;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+        .button-importplus{
+            margin-bottom: 10px;
+        }
+        .card{
+            background-color: 46554F;
+        }
+        .popupmm{
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-cuntentmm{
+            height: 250px;
+            width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .inputpopup{
+            display: block;
+            border: none;
+            padding: 5x;
+            border-radius: 5px;
+            background-color: darkgray;
+
+        }
+        .popupform{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .butformcancel{
+            color: #729788;
+            padding: 5px 5px;
+            border-radius: 10px  ;
+            border: 2px solid #729788;
+            cursor: pointer
+           
+        }
