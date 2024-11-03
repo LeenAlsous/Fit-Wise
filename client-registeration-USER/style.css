@@ -4,6 +4,7 @@
   }
   .navbar-toggler:focus{color: rgba(114, 151, 136, 1);}
   .navbar-toggler-icon {background-image: url(menu.png);}
+  .nav-item a:hover{ color:rgba(245, 220, 107, 1) ;}
   .navbar-toggler{font-size:x-large;}
     .container-fluid{
       background-color: rgb(255, 255, 255);
@@ -19,7 +20,7 @@
       font-size: 16px;
       font-weight: bold;
     }
-   .btn-warning{
+   .btn-warning {
     border-radius: 25px;
     background-color: rgba(245, 220, 107, 1);
     width: 7rem;
@@ -37,7 +38,31 @@
    
    
 }
-
+.popup{
+  margin-top: 100px;
+  background-color:rgb(255, 255, 255) ;
+  color: rgb(5, 3, 3);
+  border-radius:50px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden;
+  transition:transform 0.4s,top 0.4s}
+.popup button{border-radius: 25px;
+  background-color: rgba(245, 220, 107, 1);
+  width: 7rem;
+  font-weight: bold;}
+  .form{ font-family: poppins; font-size: 20px; border-radius: 20px; width: 100%;}
+  .openPopup{ top:50%;   transform: translate(-50%,-50%) scale(1);  visibility:visible;
+ 
+}
+.popup label{ color: rgb(39, 48, 44);}
+.popup input{ border-radius: 10pc; background-color: rgba(188, 188, 188, 0.282);}
+.popup button{margin-top: 15px;}
 .item1, .item2 {
 
            /* Add some padding */
@@ -130,7 +155,7 @@ text-shadow:  3px 3px 3px rgb(254, 253, 253);
     background-size: cover;
   }
   .heading{ font-size: 40px; font-family: Lato; text-align: center; color: white;}
-  .bord{    background-color: rgba(62, 62, 62, 1); font-family: poppins; color:white; font-weight: bold; font-size: 20px; border-radius: 12px;
+  .bord{    background-color:rgba(66, 85, 79, 1); font-family: poppins; color:white; font-weight: bold; font-size: 20px; border-radius: 12px;
   }
   .address{
     text-align:center;
@@ -140,10 +165,11 @@ text-shadow:  3px 3px 3px rgb(254, 253, 253);
   }
   .address span{ color: rgba(114, 151, 136, 1); font-weight: normal;}
   .social{ padding-top: 13px; color:rgba(114, 151, 136, 1) ; font-weight: bold;}
-
+  
   .end{
     background-color: rgba(236, 233, 233, 1);;
     color:rgba(114, 151, 136, 1) ;
   }
   .end h3{font-weight: bold;}
-  .end a{ color: rgba(114, 151, 136, 1); font-weight: bold; font-display:none; text-decoration: none;}
+  .end a { color: rgba(114, 151, 136, 1); font-weight: bold; font-display:none; text-decoration: none;}
+.bord a{text-decoration: none; color:black}
