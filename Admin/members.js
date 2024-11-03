@@ -1,3 +1,10 @@
-document.getElementById().addEventListener("click",function(){
-document.querySelector(".popupmm").style.display ="flex"
+
+    document.getElementById('popupmembers').addEventListener('click', function (x) {
+        x.preventDefault();
+        
+document.querySelector(".popupmm").style.visibility ="visible"
 })
+document.getElementById('close').addEventListener('submit', function (x) {
+    x.preventDefault();
+    
+document.querySelector(".popupmm").style.visibility ="hidden"})
