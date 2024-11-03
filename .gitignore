@@ -23,7 +23,6 @@ Homestead.json
 .phpunit.result.cache
 
 **/.DS_Store
-
 # System / Log files
 *.DS_Store
 *.log
