@@ -209,7 +209,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Admin Profile Page</h1>
+            <h1 class="m-0">Admin Information</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -221,17 +221,122 @@ scratch. This page gets rid of all links and provides the needed markup only.
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
-
+    
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle" src="dist/img/yazan.jpg" alt="User profile picture">
+                </div>
+
+                <h3 class="profile-username text-center">Yazan Masafeh</h3>
+
+                <p class="text-muted text-center">Gym Admin</p>
+
+                <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <b>Username</b> <a class="float-right">yazan_m</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Contact no.</b> <a class="float-right">0774394876</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Email Address:</b> <a class="float-right">yazanmjbfd@gmail.com</a>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-block btn-warning"><b>Update</b></a>
+              </div>
+              <!-- /.card-body -->
+            </div>
             
+            <button type="button" class="btn btn-block btn-info" control-id="ControlID-27">Register New Admin Account</button> 
           </div>
-          <!-- /.col-md-6 -->
+                  <!-- /.col-md-6 -->
           <div class="col-lg-6">
-            
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">Update Profile</h3>
+              </div>
+              <div class="card-body">
+                <!-- phone No. done-->
+                <div class="form-group">
+                  <label>Contact No.</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                    </div>
+                    <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text" control-id="ControlID-25">
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+
+                <!-- Username done-->
+                <div class="form-group">
+                  <label>Username</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Username" control-id="ControlID-57">
+                </div>
+                <!-- /.input group -->
+              </div>
+                <!-- /.form group -->
+
+                <!-- Email Address -->
+                <div class="form-group">
+                  <label>Email Address</label>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="Email" control-id="ControlID-60">
+                  </div>
+                  <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+                <button type="button" class="btn btn-block btn-warning" control-id="ControlID-39">Save</button>
+                <button type="button" class="btn btn-block btn-default" control-id="ControlID-3">Cancel</button>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <div class="card card-danger">
+              <div class="card-header">
+                <h3 class="card-title">Password</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Current password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                </div>
+                <!-- /.card -->
+                <div class="form-group">
+                  <label for="exampleInputPassword1">New Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                </div>
+                <!-- /.card -->
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Re-type Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                </div>
+                <!-- /.form group -->
+                  <button type="button" class="btn btn-block btn-warning" control-id="ControlID-39">Change</button>
+                  <button type="button" class="btn btn-block btn-default" control-id="ControlID-3">Clear</button>
+  
+                </div>
+                <!-- /.card -->
+              </div>
+              <!-- /.card-body -->
+              
+            </div>
           </div>
           <!-- /.col-md-6 -->
         </div>
