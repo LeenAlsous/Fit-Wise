@@ -9,6 +9,12 @@
   --break-point: 820px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*general styles*/
 body {
   background-color: var(--white-color);
@@ -58,6 +64,7 @@ hr {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .red-text {
@@ -233,7 +240,7 @@ input,
 select {
   border: 1px solid #d9d9d9;
   border-radius: 6px;
-  width: 97%;
+  width: 100%;
   margin: 4px 0;
 }
 
@@ -257,4 +264,17 @@ select {
   border: 2px solid transparent;
   padding: 9px;
   margin-top: 9%;
+}
+
+/*full schedule style*/
+#title {
+  display: flex; /* Ensure the element is displayed */
+  visibility: visible; /* Ensure the element is visible */
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+  margin-top: 4%;
+  color: var(--blk-color);
+  font-size: 25px;
 }

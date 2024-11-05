@@ -138,28 +138,29 @@
 
     <!--first calc-->
     <div class="row margin-bottom">
-      <div class="col-md-4 col-10 center-block margin-top">
+      <div class="col-md-4 col-sm-10 center-block margin-top">
         <div class="radial calculator">
           <span class="headings">Calories calculator</span>
-          <form action="">
-            <input type="text" placeholder="Weight" />
-            <input type="text" placeholder="Height" />
-            <input type="text" placeholder="Age" />
+          <form>
             <div>
-              <!--TODO: create custom dropdown list instead of select-->
-              <select name="Gender" id="gender">
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-              </select>
+              <input type="text" placeholder="Weight" />
+              <input type="text" placeholder="Height" />
+              <input type="number" placeholder="Age" />
             </div>
-            <div>
-              <select name="Goal" id="goal">
-                <option value="loss">Weight loss</option>
-                <option value="gain">Weight gain</option>
-                <option value="maintain">Maintain weight</option>
-              </select>
-            </div>
+            <!--TODO: create custom dropdown list instead of select-->
+            <select name="Gender" id="gender">
+              <option value="">Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <select name="Goal" id="goal">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
+            </select>
             <select name="Activity level" id="activity">
+              <option value="">Activity level</option>
               <option value="moderate">Moderatly active</option>
               <option value="none">Not active</option>
               <option value="light">Lightly active</option>
@@ -170,8 +171,8 @@
         </div>
         <div class="gradient-border hide-on-lg">
           <span
-            >You need  X calories daily, based on your activity and health
-            goals. <br />
+            >You need X calories daily, based on your activity and health goals.
+            <br />
             To maintain a balanced lifestyle, knowing your intake helps support
             energy, fitness, and overall well-being.</span
           >
@@ -179,32 +180,33 @@
       </div>
 
       <!--second calc-->
-      <div class="col-md-4 center-block margin-top hide-on-sm">
+      <div class="col-md-4 col-sm-10 center-block margin-top hide-on-sm">
         <div class="radial calculator">
           <span class="headings">Protein calculator</span>
-          <form action="">
+          <form>
             <input type="text" placeholder="Calories count" />
-            <select name="Activity level" id="activity">
-              <option value="moderate">Moderatly active</option>
-              <option value="none">Not active</option>
-              <option value="light">Lightly active</option>
-              <option value="very">Very active</option>
+
+            <select name="Goal" id="goalP">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
             </select>
           </form>
           <button class="lg-btn text">Calculate</button>
         </div>
         <div class="gradient-border hide-on-sm">
           <span
-            >You need  X calories daily, based on your activity and health
-            goals. <br />
+            >You need X calories daily, based on your activity and health goals.
+            <br />
             To maintain a balanced lifestyle, knowing your intake helps support
             energy, fitness, and overall well-being.</span
           >
         </div>
         <div class="gradient-border hide-on-lg">
           <span
-            >You need  X calories daily, based on your activity and health
-            goals. <br />
+            >You need X calories daily, based on your activity and health goals.
+            <br />
             To maintain a balanced lifestyle, knowing your intake helps support
             energy, fitness, and overall well-being.</span
           >
