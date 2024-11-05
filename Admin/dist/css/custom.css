@@ -71,3 +71,50 @@
             cursor: pointer
            
         }
+        .cardplan{
+            background: linear-gradient(to right, #AECB6E, #729788);
+            width: 300px;
+            height: 100px;
+            border-radius: 10px  ;
+           font-family: Bebas Neue;
+          margin-left: 30px;
+          margin-top: 30px;
+       
+        }
+.cardplantext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: medium;
+}
+.cardplan  h7  {
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+.cardplantext p{
+    margin-left: 10px;
+    color: white;
+}
+.cardplanflix{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+   
+}
+.addplancard{
+
+    width: 300px;
+    height: 100px;
+    border-radius: 10px  ;
+    border: 2px solid #729788;
+    display: flex;
+    justify-content: center;
+align-items: center;
+
+margin-top: 47px;
+}
+
