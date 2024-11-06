@@ -138,54 +138,20 @@
 
     <!--first calc-->
     <div class="row margin-bottom">
-      <div class="col-md-4 col-10 center-block margin-top">
-        <div class="radial calculator">
-          <p class="headings vertical-margin blk-text">Calories calculator</p>
-          <form>
-            <div>
-              <input type="text" placeholder="Weight" />
-              <input type="text" placeholder="Height" />
-              <input type="number" placeholder="Age" />
-            </div>
-            <!--TODO: create custom dropdown list instead of select-->
-            <select name="Gender" id="gender">
-              <option value="">Gender</option>
-              <option value="female">Female</option>
-              <option value="male">Male</option>
-            </select>
-            <select name="Goal" id="goal">
-              <option value="">Goal</option>
-              <option value="loss">Weight loss</option>
-              <option value="gain">Weight gain</option>
-              <option value="maintain">Maintain weight</option>
-            </select>
-            <select name="Activity level" id="activity">
-              <option value="">Activity level</option>
-              <option value="moderate">Moderatly active</option>
-              <option value="none">Not active</option>
-              <option value="light">Lightly active</option>
-              <option value="very">Very active</option>
-            </select>
-          </form>
-          <button
-            type="submit"
-            id="caloriesCalc"
-            class="lg-btn text vertical-margin"
+      <div class="col-md-2 center-menu">
+        <div class="calculators-menu">
+          <p class="blk-text headings">calculators</p>
+          <a onclick="" class="text no-link calculator-option"
+            ><sp>Calories Calculator</sp></a
           >
-            Calculate
-          </button>
-        </div>
-        <div id="calories" class="gradient-border">
-          <span
-            >To support a healthy lifestyle, aim for [calculated calories]
-            calories each day. <br />Tracking your intake can help you stay on
-            course and see steady progress!</span
+          <a onclick="" class="text no-link calculator-option active-tab"
+            ><span>Protein Calculator</span></a
           >
         </div>
       </div>
 
       <!--second calc-->
-      <div class="col-md-4 col-10 center-block margin-top hide-on-sm">
+      <div class="col-md-5 col-10 center-block" style="margin-top: 7%">
         <div class="radial calculator">
           <p class="headings blk-text vertical-margin">Protein calculator</p>
           <form>
@@ -216,6 +182,49 @@
           </button>
         </div>
         <div id="protein" class="gradient-border">
+          <span
+            >To reach your goal, aim for [grams of protein] grams of protein
+            each day. <br />Protein is key to fueling your energy and recovery,
+            so make sure to stay on track!</span
+          >
+        </div>
+      </div>
+
+      <!--second calc-->
+      <div
+        class="col-md-5 col-10 center-block margin-top"
+        style="display: none"
+      >
+        <div class="radial calculator">
+          <p class="headings blk-text vertical-margin">Protein calculator</p>
+          <form>
+            <input type="text" placeholder="Weight" />
+            <input type="text" placeholder="Height" />
+            <input type="number" placeholder="Age" />
+            <select name="Gender" id="gender">
+              <option value="">Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <select name="Goal" id="goalP">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
+            </select>
+            <select name="Activity level" id="activity">
+              <option value="">Activity level</option>
+              <option value="moderate">Moderatly active</option>
+              <option value="none">Not active</option>
+              <option value="light">Lightly active</option>
+              <option value="very">Very active</option>
+            </select>
+          </form>
+          <button id="caloriesCalc" class="lg-btn text vertical-margin">
+            Calculate
+          </button>
+        </div>
+        <div id="calories" class="gradient-border">
           <span
             >To reach your goal, aim for [grams of protein] grams of protein
             each day. <br />Protein is key to fueling your energy and recovery,
