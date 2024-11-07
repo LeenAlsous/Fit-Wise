@@ -141,17 +141,20 @@
       <div class="col-md-2 center-menu">
         <div class="calculators-menu">
           <p class="blk-text headings">calculators</p>
-          <a onclick="" class="text no-link calculator-option"
+          <a
+            id="defaultTab"
+            onclick="showCalc(event, 'calsCalc')"
+            class="text no-link option"
             ><sp>Calories Calculator</sp></a
           >
-          <a onclick="" class="text no-link calculator-option active-tab"
+          <a onclick="showCalc(event, 'prtnCalc')" class="text no-link option"
             ><span>Protein Calculator</span></a
           >
         </div>
       </div>
 
       <!--second calc-->
-      <div class="col-md-5 col-10 center-block" style="margin-top: 7%">
+      <div id="prtnCalc" class="col-md-5 col-10 center-block calc margin-top">
         <div class="radial calculator">
           <p class="headings blk-text vertical-margin">Protein calculator</p>
           <form>
@@ -189,14 +192,11 @@
           >
         </div>
       </div>
-
-      <!--second calc-->
-      <div
-        class="col-md-5 col-10 center-block margin-top"
-        style="display: none"
-      >
+      <div id="calsCalc" class="col-md-5 col-10 center-block calc margin-top">
         <div class="radial calculator">
-          <p class="headings blk-text vertical-margin">Protein calculator</p>
+          <p class="headings blk-text vertical-margin">
+            caloriesCalc calculator
+          </p>
           <form>
             <input type="text" placeholder="Weight" />
             <input type="text" placeholder="Height" />
@@ -206,7 +206,7 @@
               <option value="female">Female</option>
               <option value="male">Male</option>
             </select>
-            <select name="Goal" id="goalP">
+            <select name="Goal" id="goal">
               <option value="">Goal</option>
               <option value="loss">Weight loss</option>
               <option value="gain">Weight gain</option>
@@ -232,6 +232,7 @@
           >
         </div>
       </div>
+      <!--second calc-->
     </div>
     <!--end page content-->
 

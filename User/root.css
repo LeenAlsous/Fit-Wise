@@ -240,6 +240,10 @@ hr {
   margin: 2%;
 }
 
+.calc {
+  display: none;
+}
+
 .center-menu {
   display: flex;
   margin: auto;
@@ -263,11 +267,10 @@ hr {
   }
 }
 
-.calculator-option {
+.option {
   margin: 2% 7% 5% 4%;
 }
-
-.active-tab {
+.calculators-menu a.active {
   border-right: 5px solid var(--dark-green);
   border-right-width: 3px;
 }
