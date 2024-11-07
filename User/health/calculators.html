@@ -101,7 +101,11 @@
                   More
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/profile-user/index.html"
+                      >Profile</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" href="#">About us</a></li>
                   <li><a class="dropdown-item" href="#">Lanhuage</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -131,23 +135,86 @@
     <!--end nav bar-->
 
     <!--page content-->
-    <div class="hide-on-lg" style="margin-top: 8%; margin-left: 3%">
-      <button class="btn linear text">Calories</button>
-      <button class="btn linear text">Protein</button>
+    <div class="hide-on-lg">
+      <div class="tabs">
+        <button
+          id="defaultTab"
+          onclick="showCalc(event, 'calsCalc')"
+          class="btn text option"
+        >
+          Calories
+        </button>
+        <button onclick="showCalc(event, 'prtnCalc')" class="btn text option">
+          Protein
+        </button>
+      </div>
     </div>
 
     <!--first calc-->
     <div class="row margin-bottom">
-      <div class="col-md-4 col-sm-10 center-block margin-top">
+      <div class="col-md-2 center-menu">
+        <div class="calculators-menu">
+          <p class="blk-text headings">calculators</p>
+          <a
+            id="defaultOption"
+            onclick="showCalc(event, 'calsCalc')"
+            class="text no-link option"
+            ><sp>Calories Calculator</sp></a
+          >
+          <a onclick="showCalc(event, 'prtnCalc')" class="text no-link option"
+            ><span>Protein Calculator</span></a
+          >
+        </div>
+      </div>
+
+      <!--second calc-->
+      <div id="prtnCalc" class="col-md-5 col-10 center-block calc margin-top">
         <div class="radial calculator">
-          <span class="headings">Calories calculator</span>
+          <p class="headings blk-text vertical-margin">Protein calculator</p>
           <form>
-            <div>
-              <input type="text" placeholder="Weight" />
-              <input type="text" placeholder="Height" />
-              <input type="number" placeholder="Age" />
-            </div>
-            <!--TODO: create custom dropdown list instead of select-->
+            <input type="text" placeholder="Weight" />
+            <input type="text" placeholder="Height" />
+            <input type="number" placeholder="Age" />
+            <select name="Gender" id="gender">
+              <option value="">Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <select name="Goal" id="goalP">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
+            </select>
+            <select name="Activity level" id="activity">
+              <option value="">Activity level</option>
+              <option value="moderate">Moderatly active</option>
+              <option value="none">Not active</option>
+              <option value="light">Lightly active</option>
+              <option value="very">Very active</option>
+            </select>
+          </form>
+          <button id="proteinCalc" class="lg-btn text vertical-margin">
+            Calculate
+          </button>
+        </div>
+        <div id="protein" class="gradient-border">
+          <span
+            >To reach your goal, aim for [grams of protein] grams of protein
+            each day. <br />Protein is key to fueling your energy and recovery,
+            so make sure to stay on track!</span
+          >
+        </div>
+      </div>
+      <div id="calsCalc" class="col-md-5 col-10 center-block calc margin-top">
+        <div class="radial calculator">
+          <p class="headings blk-text vertical-margin">
+            caloriesCalc calculator
+          </p>
+          <form>
+            <input type="text" placeholder="Weight" />
+            <input type="text" placeholder="Height" />
+            <input type="number" placeholder="Age" />
             <select name="Gender" id="gender">
               <option value="">Gender</option>
               <option value="female">Female</option>
@@ -167,51 +234,19 @@
               <option value="very">Very active</option>
             </select>
           </form>
-          <button class="lg-btn text">Calculate</button>
+          <button id="caloriesCalc" class="lg-btn text vertical-margin">
+            Calculate
+          </button>
         </div>
-        <div class="gradient-border hide-on-lg">
+        <div id="calories" class="gradient-border">
           <span
-            >You need X calories daily, based on your activity and health goals.
-            <br />
-            To maintain a balanced lifestyle, knowing your intake helps support
-            energy, fitness, and overall well-being.</span
+            >To reach your goal, aim for [grams of protein] grams of protein
+            each day. <br />Protein is key to fueling your energy and recovery,
+            so make sure to stay on track!</span
           >
         </div>
       </div>
-
       <!--second calc-->
-      <div class="col-md-4 col-sm-10 center-block margin-top hide-on-sm">
-        <div class="radial calculator">
-          <span class="headings">Protein calculator</span>
-          <form>
-            <input type="text" placeholder="Calories count" />
-
-            <select name="Goal" id="goalP">
-              <option value="">Goal</option>
-              <option value="loss">Weight loss</option>
-              <option value="gain">Weight gain</option>
-              <option value="maintain">Maintain weight</option>
-            </select>
-          </form>
-          <button class="lg-btn text">Calculate</button>
-        </div>
-        <div class="gradient-border hide-on-sm">
-          <span
-            >You need X calories daily, based on your activity and health goals.
-            <br />
-            To maintain a balanced lifestyle, knowing your intake helps support
-            energy, fitness, and overall well-being.</span
-          >
-        </div>
-        <div class="gradient-border hide-on-lg">
-          <span
-            >You need X calories daily, based on your activity and health goals.
-            <br />
-            To maintain a balanced lifestyle, knowing your intake helps support
-            energy, fitness, and overall well-being.</span
-          >
-        </div>
-      </div>
     </div>
     <!--end page content-->
 
@@ -260,6 +295,7 @@
     </footer>
     <!--end footer-->
 
+    <script src="/User/script2.js"></script>
     <script
       src="https://kit.fontawesome.com/d2ac08e343.js"
       crossorigin="anonymous"
