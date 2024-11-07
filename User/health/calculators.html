@@ -55,10 +55,11 @@
         </defs>
       </svg>
       <!--end nav bar wave design-->
+
       <!--nav bar -->
       <nav class="navbar navbar-expand-lg navbar-index">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/User/home_page/home.html">
             <img
               src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"
               alt="Logo"
@@ -84,6 +85,11 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-bell"></i
+                ></a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -95,6 +101,7 @@
                   More
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li><a class="dropdown-item" href="#">About us</a></li>
                   <li><a class="dropdown-item" href="#">Lanhuage</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -104,21 +111,108 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/user/home_page/home.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Health</a>
+                <a class="nav-link active" href="/user/health/calculators.html"
+                  >Health</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <span class="headings" id="greeting">Hello user</span>
     </section>
     <!--end nav bar-->
 
     <!--page content-->
+    <div class="hide-on-lg" style="margin-top: 8%; margin-left: 3%">
+      <button class="btn linear text">Calories</button>
+      <button class="btn linear text">Protein</button>
+    </div>
 
+    <!--first calc-->
+    <div class="row margin-bottom">
+      <div class="col-md-4 col-sm-10 center-block margin-top">
+        <div class="radial calculator">
+          <span class="headings">Calories calculator</span>
+          <form>
+            <div>
+              <input type="text" placeholder="Weight" />
+              <input type="text" placeholder="Height" />
+              <input type="number" placeholder="Age" />
+            </div>
+            <!--TODO: create custom dropdown list instead of select-->
+            <select name="Gender" id="gender">
+              <option value="">Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <select name="Goal" id="goal">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
+            </select>
+            <select name="Activity level" id="activity">
+              <option value="">Activity level</option>
+              <option value="moderate">Moderatly active</option>
+              <option value="none">Not active</option>
+              <option value="light">Lightly active</option>
+              <option value="very">Very active</option>
+            </select>
+          </form>
+          <button class="lg-btn text">Calculate</button>
+        </div>
+        <div class="gradient-border hide-on-lg">
+          <span
+            >You need X calories daily, based on your activity and health goals.
+            <br />
+            To maintain a balanced lifestyle, knowing your intake helps support
+            energy, fitness, and overall well-being.</span
+          >
+        </div>
+      </div>
+
+      <!--second calc-->
+      <div class="col-md-4 col-sm-10 center-block margin-top hide-on-sm">
+        <div class="radial calculator">
+          <span class="headings">Protein calculator</span>
+          <form>
+            <input type="text" placeholder="Calories count" />
+
+            <select name="Goal" id="goalP">
+              <option value="">Goal</option>
+              <option value="loss">Weight loss</option>
+              <option value="gain">Weight gain</option>
+              <option value="maintain">Maintain weight</option>
+            </select>
+          </form>
+          <button class="lg-btn text">Calculate</button>
+        </div>
+        <div class="gradient-border hide-on-sm">
+          <span
+            >You need X calories daily, based on your activity and health goals.
+            <br />
+            To maintain a balanced lifestyle, knowing your intake helps support
+            energy, fitness, and overall well-being.</span
+          >
+        </div>
+        <div class="gradient-border hide-on-lg">
+          <span
+            >You need X calories daily, based on your activity and health goals.
+            <br />
+            To maintain a balanced lifestyle, knowing your intake helps support
+            energy, fitness, and overall well-being.</span
+          >
+        </div>
+      </div>
+    </div>
     <!--end page content-->
 
     <!--footer-->

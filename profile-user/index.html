@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>profile</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,6 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!--nav bar wave design-->
@@ -49,7 +50,7 @@
       <!--nav bar -->
       <nav class="navbar navbar-expand-lg navbar-index">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/User/home_page/home.html">
+          <a class="navbar-brand" href="#">
             <img
               src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"
               alt="Logo"
@@ -75,11 +76,6 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-bell"></i
-                ></a>
-              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -100,17 +96,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/user/home_page/home.html"
-                  >Home</a
-                >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/user/health/calculators.html"
-                  >Health</a
-                >
+                <a class="nav-link" href="#">Health</a>
               </li>
             </ul>
           </div>
@@ -121,85 +110,29 @@
     <!--end nav bar-->
 
     <!--page content-->
-    <section>
-      <div class="busy-status linear headings">
-        <span>Gym is <span class="red-text"> busy</span></span>
-      </div>
-    </section>
-
-    <br />
-    <section class="margin-top">
-      <div class="row">
-        <div class="col-md-5 col-11 radial center-block">
-          <span class="headings col">Memberships</span>
-          <div class="row">
-            <div class="col-8">
-              <div class="dark-border row">
-                <span class="headings">Pool Membership</span>
-                <br />
-                <span class="text"
-                  ><i class="fa-solid fa-calendar blk-text"></i> Expires on
-                  11/10/2024</span
-                >
-              </div>
-            </div>
-            <div class="col center-left">
-              <button class="btn yellow-btn">View</button>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-8">
-              <div class="dark-border row">
-                <span class="headings">Gym Membership</span>
-                <br />
-                <span
-                  ><i class="fa-solid fa-triangle-exclamation red-text"></i>
-                  Expired</span
-                >
-              </div>
-            </div>
-            <div class="col center-left">
-              <button class="btn expired-btn">View</button>
-            </div>
-          </div>
+    <div class="container d-flex justify-content-center ">
+      <div class="box ">
+        <div class="details d-flex justify-content-center">
+          <img src="profile.jpg" alt=""> 
+          <div class=" mt-5">First name last name</div> 
         </div>
-        <div class="col-md-5 col-11 radial center-block">
-          <div class="row">
-            <span class="headings col">Upcoming Classes</span>
-            <span class="text col center-left">See full schedule</span>
-          </div>
-          <div class="dark-border row">
-            <div class="col-8">
-              <span class="headings">Body Combat with Coach Naser</span>
-              <br />
-              <span class="text"
-                >From 5:00 PM to 6:00 PM - Main GGX studio</span
-              >
-            </div>
-            <span class="col text center-left">Today</span>
-          </div>
-          <div class="dark-border row">
-            <div class="col-8">
-              <span class="headings">Kick Boxing with coach Tamara</span>
-              <br />
-              <span class="text"
-                >from 2:00 PM to 3:00 PM - Mind and Body studio</span
-              >
-            </div>
-            <span class="col text center-left">Tomorrow</span>
-          </div>
+        
+        <div class="d-flex  justify-content-center pt-5">
+          
+        <div class="weight p-3">
+          current Weight: <br>XX Kg
         </div>
+        <div class="height p-3">Current height <br> XXX Cm </div>
       </div>
-    </section>
-    <br />
-    <section>
-      <div class="banner center-block">
-        <img src="/assets/promo1.png" alt="" class="banner-img" />
-      </div>
-    </section>
-    <!--end page content-->
 
-    <!--footer-->
+      <div class="email">Email: example@fitwise.com </div> 
+    <div class="buttons d-flex justify-content-center mt-5">
+      <button type="button" class="btn btn-warning">Edite</button>
+      <button type="button" class="btn btn-warning">Save</button>
+
+    </div>  </div>
+    </div>
+   
     <footer class="linear-bottom-top">
       <p class="headings blk-text">contacts</p>
       <div>
@@ -234,6 +167,26 @@
       >
       <hr class="hide-on-lg" />
       <hr class="hide-on-lg" />
+      <span class="center-block">
+        <img
+          src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"
+          alt=""
+          class="hide-on-lg"
+        />
+      </span>
+    </footer>
+   
+    <!--end page content-->
+
+    <!--footer-->
+    <!--<footer class="linear-bottom-top">
+      
+      
+
+      
+
+      
+      
       <span class="center-block">
         <img
           src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"
