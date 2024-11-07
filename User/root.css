@@ -1,3 +1,5 @@
+/*max-width:820px for small screen?*/
+
 :root {
   --color1: #729788;
   --color2: #c9e983;
@@ -273,6 +275,24 @@ hr {
 .calculators-menu a.active {
   border-right: 5px solid var(--dark-green);
   border-right-width: 3px;
+}
+
+.tabs {
+  margin-top: 8%;
+  margin-left: 3%;
+}
+
+.tabs button {
+  background: linear-gradient(var(--white-color), var(--white-color))
+      padding-box,
+    linear-gradient(to right, var(--color1), var(--color2)) border-box;
+  border-radius: 15px;
+  border: 2px solid transparent;
+}
+
+.tabs button.active {
+  background-image: linear-gradient(to right, var(--color1), var(--color2));
+  border: none;
 }
 
 #calories {

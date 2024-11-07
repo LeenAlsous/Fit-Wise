@@ -131,9 +131,19 @@
     <!--end nav bar-->
 
     <!--page content-->
-    <div class="hide-on-lg" style="margin-top: 8%; margin-left: 3%">
-      <button class="btn linear text">Calories</button>
-      <button class="btn linear text">Protein</button>
+    <div class="hide-on-lg">
+      <div class="tabs">
+        <button
+          id="defaultTab"
+          onclick="showCalc(event, 'calsCalc')"
+          class="btn text option"
+        >
+          Calories
+        </button>
+        <button onclick="showCalc(event, 'prtnCalc')" class="btn text option">
+          Protein
+        </button>
+      </div>
     </div>
 
     <!--first calc-->
@@ -142,7 +152,7 @@
         <div class="calculators-menu">
           <p class="blk-text headings">calculators</p>
           <a
-            id="defaultTab"
+            id="defaultOption"
             onclick="showCalc(event, 'calsCalc')"
             class="text no-link option"
             ><sp>Calories Calculator</sp></a

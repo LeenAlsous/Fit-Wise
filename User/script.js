@@ -10,7 +10,11 @@ document.getElementById("proteinCalc").addEventListener("click", function (x) {
   document.getElementById("protein").style.display = "block";
 });
 
-document.getElementById("defaultTab").click();
+if (window.matchMedia("(max-width: 820px)").matches) {
+  document.getElementById("defaultTab").click();
+} else {
+  document.getElementById("defaultOption").click();
+}
 function showCalc(evt, calcId) {
   var i, calc, option;
   calc = document.getElementsByClassName("calc");
