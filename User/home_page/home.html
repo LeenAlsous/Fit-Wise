@@ -49,7 +49,7 @@
       <!--nav bar -->
       <nav class="navbar navbar-expand-lg navbar-index">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/User/home_page/home.html">
             <img
               src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"
               alt="Logo"
@@ -75,6 +75,11 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-bell"></i
+                ></a>
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -86,6 +91,7 @@
                   More
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
                   <li><a class="dropdown-item" href="#">About us</a></li>
                   <li><a class="dropdown-item" href="#">Lanhuage</a></li>
                   <li><hr class="dropdown-divider" /></li>
@@ -95,10 +101,17 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/user/home_page/home.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Health</a>
+                <a class="nav-link" href="/user/health/calculators.html"
+                  >Health</a
+                >
               </li>
             </ul>
           </div>
@@ -154,7 +167,11 @@
         <div class="col-md-5 col-11 radial center-block">
           <div class="row">
             <span class="headings col">Upcoming Classes</span>
-            <span class="text col center-left">See full schedule</span>
+            <a
+              href="/User/full_schedule/schedule.html"
+              class="text col center-left no-link"
+              >See full schedule</a
+            >
           </div>
           <div class="dark-border row">
             <div class="col-8">
@@ -182,7 +199,7 @@
     <br />
     <section>
       <div class="banner center-block">
-        <img src="/assets/promo2.png" alt="" class="banner-img" />
+        <img src="/assets/promo1.png" alt="" class="banner-img" />
       </div>
     </section>
     <!--end page content-->
