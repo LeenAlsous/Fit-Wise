@@ -180,10 +180,12 @@ hr {
   margin-bottom: calc(8px + 1.5625vw);
 }
 
-.ms-lg-5 {
-  position: absolute;
-  right: 0;
-  margin-right: 3%;
+@media (min-width: 820px) {
+  .ms-lg-5 {
+    position: absolute;
+    right: 0;
+    margin-right: 3%;
+  }
 }
 
 .center-left {
