@@ -56,10 +56,16 @@ hr {
 
 .svg-bg {
   position: absolute;
+  pointer-events: none;
   top: 0;
   left: 0;
   width: 100%;
   z-index: -1;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .red-text {
@@ -140,10 +146,11 @@ hr {
   right: 0;
   margin-top: 1%;
   margin-right: 3%;
+  z-index: -2;
 }
 
 .margin-top {
-  margin-top: 11%;
+  margin-top: 5%;
 }
 @media (max-width: 820px) {
   .margin-top {
@@ -184,7 +191,7 @@ hr {
   .ms-lg-5 {
     position: absolute;
     right: 0;
-    margin-right: 3%;
+    margin-right: 1%;
   }
 }
 

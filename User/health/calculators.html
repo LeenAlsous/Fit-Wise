@@ -41,7 +41,7 @@
   </head>
   <body>
     <!--nav bar wave design-->
-    <section>
+    <section class="sticky">
       <svg class="svg-bg" viewBox="0 0 500 200">
         <path
           d="M 0 50 C 150 100 350 0 500 40 L 500 0 L 0 0 Z"
@@ -107,7 +107,7 @@
                     >
                   </li>
                   <li><a class="dropdown-item" href="#">About us</a></li>
-                  <li><a class="dropdown-item" href="#">Lanhuage</a></li>
+                  <li><a class="dropdown-item" href="#">Language</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item red-text" href="#">Sign out</a>
@@ -135,6 +135,7 @@
     <!--end nav bar-->
 
     <!--page content-->
+    <!--Tabs-->
     <div class="hide-on-lg">
       <div class="tabs">
         <button
@@ -150,11 +151,11 @@
       </div>
     </div>
 
-    <!--first calc-->
+    <!--menu-->
     <div class="row margin-bottom">
       <div class="col-md-2 center-menu">
         <div class="calculators-menu">
-          <p class="blk-text headings">calculators</p>
+          <p class="blk-text headings">Choose calculator</p>
           <a
             id="defaultOption"
             onclick="showCalc(event, 'calsCalc')"
@@ -167,8 +168,20 @@
         </div>
       </div>
 
-      <!--second calc-->
+      <!--first calc-->
       <div id="prtnCalc" class="col-md-5 col-10 center-block calc margin-top">
+        <h3>Fuel Your Fitness Journey with Protein</h3>
+        <p>
+          Calculate how much protein you need to fuel your workouts, boost
+          recovery, and build strength. Scroll down to find out your ideal daily
+          intake!
+          <h3> Protein Content per Serving: </h3>
+
+                    🥚 Egg - 6g protein per egg
+                    🐔 Chicken Breast - 31g per 3.5 ounces
+                    🌱 Lentils - 18g per cup
+                    🥛 Greek Yogurt - 10g per 100g
+        </p>
         <div class="radial calculator">
           <p class="headings blk-text vertical-margin">Protein calculator</p>
           <form>
@@ -206,11 +219,11 @@
           >
         </div>
       </div>
+
+      <!--Second calculator-->
       <div id="calsCalc" class="col-md-5 col-10 center-block calc margin-top">
         <div class="radial calculator">
-          <p class="headings blk-text vertical-margin">
-            caloriesCalc calculator
-          </p>
+          <p class="headings blk-text vertical-margin">calories Calculator</p>
           <form>
             <input type="text" placeholder="Weight" />
             <input type="text" placeholder="Height" />
@@ -246,7 +259,6 @@
           >
         </div>
       </div>
-      <!--second calc-->
     </div>
     <!--end page content-->
 
