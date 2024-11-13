@@ -50,6 +50,14 @@
             border-radius: 5px;
             position: relative;
         }
+        .edit-btn1 {
+            background-color: #fa3b3b;
+            border: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
         .inputpopup{
             display: block;
             border: none;
