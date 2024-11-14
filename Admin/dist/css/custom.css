@@ -25,14 +25,6 @@
         border-radius: 4px;
         cursor: pointer;
     }
-    .edit-btn1 {
-        background-color: #fa3b3b;
-        border: none;
-        color: #333;
-        padding: 5px 10px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
         .button-importplus{
             margin-bottom: 10px;
         }
@@ -51,8 +43,8 @@
             visibility: hidden;
         }
         .popup-cuntentmm{
-            width: 600px;
-            height: 300px;
+            height: 250px;
+            width: 500px;
             background: white;
             padding: 20px;
             border-radius: 5px;
@@ -91,7 +83,6 @@
             cursor: pointer
            
         }
-<<<<<<< HEAD
         .cardplan{
             background: linear-gradient(to right, #AECB6E, #729788);
             width: 300px;
@@ -149,10 +140,3 @@ margin-top: 47px;
 
 
 
-=======
-        .img-circle {
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-          }
->>>>>>> 15-view-coaches-admin2
