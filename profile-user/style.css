@@ -24,13 +24,12 @@
     margin-top: 40px;
 }
 
-.buttons button{ background-color: rgba(245, 220, 107, 1); width:6rem; margin-left: 15px;}
+.buttons button{ background-color: rgba(245, 220, 107, 1); width:7rem; margin-left: 15px; border-radius: 6px;}
 .email{text-align: left; margin-top: 15px;}
 
 @media (min-width: 1024px) {
     .box {
       width: 700px;
     }
-    .mt-5{ margin: 20px;
-                }
+    .mt-5{ margin: 20px;}
 }

@@ -4,7 +4,7 @@
   }
   .navbar-toggler:focus{color: rgba(114, 151, 136, 1);}
   .navbar-toggler-icon {background-image: url(menu.png);}
-  .nav-item a:hover{ color:rgba(245, 220, 107, 1) ;}
+  .nav-item a:hover{ color:rgba(114, 151, 136, 1);}
   .navbar-toggler{font-size:x-large;}
     .container-fluid{
       background-color: rgb(255, 255, 255);
@@ -15,13 +15,11 @@
         font-size: 24px;
     }
     .nav-link{
-      color: rgba(114, 151, 136, 1);
       font-family:Poppins;
       font-size: 16px;
       font-weight: bold;
     }
    .btn-warning {
-    border-radius: 25px;
     background-color: rgba(245, 220, 107, 1);
     width: 7rem;
     font-weight: bold;
@@ -38,31 +36,72 @@
    
    
 }
+
+
+
+
+
+
+
+
+
 .popup{
-  margin-top: 100px;
-  background-color:rgb(255, 255, 255) ;
-  color: rgb(5, 3, 3);
-  border-radius:50px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(0.1);
-  visibility: hidden;
-  transition:transform 0.4s,top 0.4s}
-.popup button{border-radius: 25px;
-  background-color: rgba(245, 220, 107, 1);
-  width: 7rem;
-  font-weight: bold;}
-  .form{ font-family: poppins; font-size: 20px; border-radius: 20px; width: 100%;}
-  .openPopup{ top:50%;   transform: translate(-50%,-50%) scale(1);  visibility:visible;
+  background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 50%;
+            visibility: hidden;
+             transform: translate(-50%,-50%) scale(0.1);
+      transition:transform 0.4s,top 0.4s
+  
+ }
+ .popup-cuntentmm{
+  width: 700px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  position: relative;
+}
+.inputpopup{
+  display: block;
+  border: none;
+  
+  background-color: darkgray;
+
+}
+.popupform{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.butformcancel{
+  color: #729788;
+  border-radius: 10px  ;
+  border: 2px solid #729788;
+  cursor: pointer
  
 }
-.popup label{ color: rgb(39, 48, 44);}
-.popup input{ border-radius: 10pc; background-color: rgba(188, 188, 188, 0.282);}
-.popup button{margin-top: 15px;}
+.butsub{background-color:  rgba(245, 220, 107, 1);}
+  .popup img{ height: 50px;}
+  .popup input{ border: none;}
+
+.openPopup{ top:50%;   transform: translate(-50%,-50%) scale(1);  visibility:visible;  }
+.no-scroll {
+  overflow: hidden;
+}
+.popup label{ color: #729788;}
+.popup input{border-radius: 6px;background-color: rgba(188, 188, 188, 0.282);}
+
+
+
+
+
+
 .item1, .item2 {
 
            /* Add some padding */
@@ -83,7 +122,6 @@ margin-bottom: 0px;
 
 .item2 button{
     width:8rem;
-    font-weight: bold;
 }
 .gradiant{
 
@@ -166,6 +204,10 @@ text-shadow:  3px 3px 3px rgb(254, 253, 253);
   .address span{ color: rgba(114, 151, 136, 1); font-weight: normal;}
   .social{ padding-top: 13px; color:rgba(114, 151, 136, 1) ; font-weight: bold;}
   
+
+
+
+
   .end{
     background-color: rgba(236, 233, 233, 1);;
     color:rgba(114, 151, 136, 1) ;
@@ -173,3 +215,30 @@ text-shadow:  3px 3px 3px rgb(254, 253, 253);
   .end h3{font-weight: bold;}
   .end a { color: rgba(114, 151, 136, 1); font-weight: bold; font-display:none; text-decoration: none;}
 .bord a{text-decoration: none; color:black}
+
+footer {
+  background-color: rgba(236, 233, 233, 1);;
+
+  padding: calc(8px + 1.5625vw);
+}
+.footer-margins {
+  margin: 0.3rem 0.5rem;
+}
+@media (max-width: 820px) {
+  .hide-on-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 820px) {
+  .hide-on-lg {
+    display: none;
+  }
+}
+
+.headings{
+  font-family: "Bebas Neue", "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.center-block img{ vertical-align: center;}
