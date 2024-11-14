@@ -54,6 +54,17 @@
             align-items: center;
             visibility: hidden;
         }
+        .popupmmEdit{
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+        }
         .popup-cuntentmm{
             width: 600px;
             height: 300px;
@@ -100,7 +111,6 @@
             cursor: pointer
            
         }
-<<<<<<< HEAD
         .cardplan{
             background: linear-gradient(to right, #AECB6E, #729788);
             width: 300px;
@@ -158,10 +168,8 @@ margin-top: 47px;
 
 
 
-=======
         .img-circle {
             border-radius: 50%;
             width: 50px;
             height: 50px;
           }
->>>>>>> 15-view-coaches-admin2
