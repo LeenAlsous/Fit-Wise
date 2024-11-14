@@ -55,8 +55,8 @@
             visibility: hidden;
         }
         .popup-cuntentmm{
-            height: 250px;
-            width: 500px;
+            width: 600px;
+            height: 300px;
             background: white;
             padding: 20px;
             border-radius: 5px;
@@ -100,6 +100,7 @@
             cursor: pointer
            
         }
+<<<<<<< HEAD
         .cardplan{
             background: linear-gradient(to right, #AECB6E, #729788);
             width: 300px;
@@ -157,3 +158,10 @@ margin-top: 47px;
 
 
 
+=======
+        .img-circle {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
+>>>>>>> 15-view-coaches-admin2
