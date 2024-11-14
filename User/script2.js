@@ -24,7 +24,10 @@ function showCalc(evt, calcId) {
   option = document.getElementsByClassName("option");
   for (i = 0; i < option.length; i++) {
     option[i].className = option[i].className.replace(" active", "");
+    icon = option[i].querySelector(".icon");
+    if (icon) icon.innerHTML = "";
   }
   document.getElementById(calcId).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.querySelector(".icon").innerHTML =
+    '<i class="fa-solid fa-arrow-right blk-text"></i>';
 }
