@@ -25,6 +25,18 @@
         border-radius: 4px;
         cursor: pointer;
     }
+    .edit-btn1 {
+        background-color: #fa3b3b;
+        border: none;
+        color: #333;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .bi bi-trash{
+        color: white;
+    }
+
         .button-importplus{
             margin-bottom: 10px;
         }
@@ -50,6 +62,11 @@
             border-radius: 5px;
             position: relative;
         }
+        .img-circle {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
         .edit-btn1 {
             background-color: #fa3b3b;
             border: none;
