@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>AdminLTE 3 | Admin profile page</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -19,11 +19,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini layout-navbar-fixed layout-fixed">
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light ">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -180,6 +180,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </p>
               </a>
             </li>
+            
+            <button type="button" class="btn btn-block btn-danger" control-id="ControlID-33">Log out</button>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -210,18 +213,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <!-- Profile Card -->
+          <div class="col-md-6 col-lg-5">
             <div class="card card-primary card-outline">
               <div class="card-body box-profile">
                 <div class="text-center">
                   <img class="profile-user-img img-fluid img-circle" src="dist/img/yazan.jpg" alt="User profile picture">
                 </div>
-
                 <h3 class="profile-username text-center">Yazan Masafeh</h3>
-
                 <p class="text-muted text-center">Gym Admin</p>
-
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
                     <b>Username</b> <a class="float-right">yazan_m</a>
@@ -233,102 +234,44 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <b>Email Address:</b> <a class="float-right">yazanmjbfd@gmail.com</a>
                   </li>
                 </ul>
-
                 <a href="#" class="btn btn-block btn-warning"><b>Update</b></a>
               </div>
-              <!-- /.card-body -->
             </div>
-            
-            <button type="button" class="btn btn-block btn-info" control-id="ControlID-27">Register New Admin Account</button> 
-            <button type="button" class="btn btn-block btn-danger" control-id="ControlID-33">Log out</button>
           </div>
-                  <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card card card-primary">
+    
+          <!-- Password Change Card -->
+          <div class="col-md-6 col-lg-5">
+            <div class="card card-default">
               <div class="card-header">
-                <h3 class="card-title">Update Profile</h3>
-              </div>
-              <div class="card-body">
-                <!-- phone No. done-->
-                <div class="form-group">
-                  <label>Contact No.</label>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                    </div>
-                    <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="" inputmode="text" control-id="ControlID-25">
-                  </div>
-                  <!-- /.input group -->
+                <h3 class="card-title">Change Password</h3>
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse" aria-label="Collapse password form">
+                    <i class="fas fa-minus"></i>
+                  </button>
                 </div>
-                <!-- /.form group -->
-
-                <!-- Username done-->
-                <div class="form-group">
-                  <label>Username</label>
-                <div class="input-group mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">@</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="Username" control-id="ControlID-57">
-                </div>
-                <!-- /.input group -->
-              </div>
-                <!-- /.form group -->
-
-                <!-- Email Address -->
-                <div class="form-group">
-                  <label>Email Address</label>
-
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                    </div>
-                    <input type="email" class="form-control" placeholder="Email" control-id="ControlID-60">
-                  </div>
-                  <!-- /.input group -->
-                </div>
-                <!-- /.form group -->
-                <button type="button" class="btn btn-block btn-warning" control-id="ControlID-39">Save</button>
-                <button type="button" class="btn btn-block btn-default" control-id="ControlID-3">Cancel</button>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
-            <div class="card card card-primary">
-              <div class="card-header">
-                <h3 class="card-title">Password</h3>
               </div>
               <div class="card-body">
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Current password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                  <label for="currentPassword">Current Password</label>
+                  <input type="password" class="form-control" id="currentPassword" placeholder="Current Password" required minlength="6">
                 </div>
-                <!-- /.card -->
                 <div class="form-group">
-                  <label for="exampleInputPassword1">New Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                  <label for="newPassword">New Password</label>
+                  <input type="password" class="form-control" id="newPassword" placeholder="New Password" required minlength="6">
                 </div>
-                <!-- /.card -->
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Re-type Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" control-id="ControlID-2">
+                  <label for="confirmPassword">Re-type New Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required minlength="6">
                 </div>
-                <!-- /.form group -->
-                  <button type="button" class="btn btn-block btn-warning" control-id="ControlID-39">Change</button>
-                  <button type="button" class="btn btn-block btn-default" control-id="ControlID-3">Clear</button>
-  
-                </div>
-                <!-- /.card -->
+                <button type="button" class="btn btn-block btn-warning">Change</button>
+                <button type="reset" class="btn btn-block btn-default">Clear</button>
               </div>
-              <!-- /.card-body -->
-              
             </div>
           </div>
-          <!-- /.col-md-6 -->
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
+      </div>
     </div>
+    
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
