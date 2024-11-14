@@ -90,7 +90,7 @@
   .popup img{ height: 50px;}
   .popup input{ border: none;}
 
-.openPopup{ top:50%;   transform: translate(-50%,-50%) scale(1);  visibility:visible;  }
+.openPopup{ top:50%;   transform: translate(-50%,-50%) scale(1);  visibility:visible; }
 .no-scroll {
   overflow: hidden;
 }
