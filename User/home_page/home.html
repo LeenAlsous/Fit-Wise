@@ -32,7 +32,7 @@
   </head>
   <body>
     <!--nav bar wave design-->
-    <section>
+    <section class="sticky">
       <svg class="svg-bg" viewBox="0 0 500 200">
         <path
           d="M 0 50 C 150 100 350 0 500 40 L 500 0 L 0 0 Z"
@@ -97,10 +97,12 @@
                     >
                   </li>
                   <li><a class="dropdown-item" href="#">About us</a></li>
-                  <li><a class="dropdown-item" href="#">Lanhuage</a></li>
+                  <li><a class="dropdown-item" href="#">Language</a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item red-text" href="/Login/index.html">Sign out</a>
+                    <a class="dropdown-item red-text" href="/Login/index.html"
+                      >Sign out</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -127,9 +129,9 @@
 
     <!--page content-->
     <section>
-      <div class="busy-status linear headings">
-        <span>Gym is <span class="red-text"> busy</span></span>
-      </div>
+      <!--<div class="full bar status">
+        <div class="busyness bar"></div>
+      </div>-->
     </section>
 
     <br />
@@ -149,7 +151,7 @@
               </div>
             </div>
             <div class="col center-left">
-              <button class="btn yellow-btn">View</button>
+              <button class="btn btn-warning">View</button>
             </div>
           </div>
           <div class="row">
@@ -164,7 +166,7 @@
               </div>
             </div>
             <div class="col center-left">
-              <button class="btn expired-btn">View</button>
+              <button class="btn btn-danger">View</button>
             </div>
           </div>
         </div>
@@ -173,7 +175,7 @@
             <span class="headings col">Upcoming Classes</span>
             <a
               href="/User/full_schedule/schedule.html"
-              class="text col center-left no-link"
+              class="col center-left blk-text text"
               >See full schedule</a
             >
           </div>
