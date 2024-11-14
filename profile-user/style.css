@@ -24,7 +24,7 @@
     margin-top: 40px;
 }
 
-.buttons button{ background-color: rgba(245, 220, 107, 1); width:7rem; margin-left: 15px; border-radius: 6px;}
+.buttons button{ background-color: rgba(245, 220, 107, 1); width:7rem; margin-left: 15px; border-radius: 6px; font-family:Arial, Helvetica, sans-serif}
 .email{text-align: left; margin-top: 15px;}
 
 @media (min-width: 1024px) {

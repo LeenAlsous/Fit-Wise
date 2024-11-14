@@ -94,7 +94,7 @@
 .no-scroll {
   overflow: hidden;
 }
-.popup label{ color: #729788;}
+.popup label{ color: #000000;}
 .popup input{border-radius: 6px;background-color: rgba(188, 188, 188, 0.282);}
 
 
