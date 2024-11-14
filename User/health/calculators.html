@@ -155,35 +155,36 @@
     <div class="row margin-bottom">
       <div class="col-md-2 center-menu">
         <div class="calculators-menu">
-          <p class="blk-text headings">Choose calculator</p>
+          <p class="blk-text headings">Choose Calculator</p>
           <a
             id="defaultOption"
             onclick="showCalc(event, 'calsCalc')"
             class="text no-link option"
-            ><sp>Calories Calculator</sp></a
+            >Calories Calculator <span class="icon mg"></span></a
           >
           <a onclick="showCalc(event, 'prtnCalc')" class="text no-link option"
-            ><span>Protein Calculator</span></a
+            >Protein Calculator <span class="icon mg"></span></a
           >
         </div>
       </div>
 
       <!--first calc-->
       <div id="prtnCalc" class="col-md-5 col-10 center-block calc margin-top">
+        <div style="padding: 2%;">
         <h3>Fuel Your Fitness Journey with Protein</h3>
         <p>
           Calculate how much protein you need to fuel your workouts, boost
           recovery, and build strength. Scroll down to find out your ideal daily
           intake!
-          <h3> Protein Content per Serving: </h3>
-
+          <h4> Protein Content per Serving: </h4>
                     🥚 Egg - 6g protein per egg
                     🐔 Chicken Breast - 31g per 3.5 ounces
                     🌱 Lentils - 18g per cup
                     🥛 Greek Yogurt - 10g per 100g
         </p>
-        <div class="radial calculator">
-          <p class="headings blk-text vertical-margin">Protein calculator</p>
+      </div>
+        <div class="linear calculator">
+          <p class="headings blk-text vertical-margin">Protein Calculator</p>
           <form>
             <input type="text" placeholder="Weight" />
             <input type="text" placeholder="Height" />
@@ -207,7 +208,7 @@
               <option value="very">Very active</option>
             </select>
           </form>
-          <button id="proteinCalc" class="lg-btn text vertical-margin">
+          <button id="proteinCalc" class="primary-btn text vertical-margin">
             Calculate
           </button>
         </div>
@@ -222,8 +223,20 @@
 
       <!--Second calculator-->
       <div id="calsCalc" class="col-md-5 col-10 center-block calc margin-top">
+        <div style="padding: 2%;">
+          <h3>Find Your Optimal Calorie Intake</h3>
+          <p>
+            Calories are the fuel that powers everything you do, from thinking and walking to building muscle. Balancing your intake is key to maintaining energy and reaching your goals.
+            Use our calculator to set your daily calorie goal and achieve a healthy balance. Ready to find out?
+            <h4> Visual Guide to Calorie-Burning Activities: </h4>
+            Calorie Burn per 30 minutes:
+            🏃 Running - Approx. 300 calories
+            🚴 Cycling - Approx. 200 calories
+            🧹 House Cleaning - Approx. 100 calories
+          </p>
+        </div>
         <div class="radial calculator">
-          <p class="headings blk-text vertical-margin">calories Calculator</p>
+          <p class="headings blk-text vertical-margin">Calories Calculator</p>
           <form>
             <input type="text" placeholder="Weight" />
             <input type="text" placeholder="Height" />
@@ -247,7 +260,7 @@
               <option value="very">Very active</option>
             </select>
           </form>
-          <button id="caloriesCalc" class="lg-btn text vertical-margin">
+          <button id="caloriesCalc" class="btn primary-btn text vertical-margin">
             Calculate
           </button>
         </div>
@@ -264,7 +277,7 @@
 
     <!--footer-->
     <footer class="linear-bottom-top">
-      <p class="headings blk-text">contacts</p>
+      <p class="headings blk-text">Contacts</p>
       <div>
         <img
           src="/assets/Green Modern Fitness App Logo (6) 2-2.svg"

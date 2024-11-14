@@ -13,6 +13,7 @@
 /*general styles*/
 body {
   background-color: var(--white-color);
+  font-family: "Lato", "Montserrat", sans-serif;
 }
 
 span {
@@ -38,6 +39,10 @@ hr {
 
 .linear {
   background-image: linear-gradient(to right, var(--color1), var(--color2));
+}
+
+.linear-p {
+  background-image: linear-gradient(to top, var(--color1), var(--color2));
 }
 
 .linear-bottom-top {
@@ -74,7 +79,6 @@ hr {
 
 .headings {
   font-size: 20px;
-  font-family: "Bebas Neue", "Oswald", sans-serif;
 }
 
 .text {
@@ -97,22 +101,24 @@ hr {
 }
 
 .btn {
-  border-radius: 12px;
-  padding: 3px 20px;
+  border-radius: 7px;
+  /*padding: 3px 20px;*/
   font-size: 13px;
   border: none;
 }
 
-.yellow-btn {
-  background-color: var(--yellow-color);
-  color: var(--dark-green);
-  border: none;
+.primary-btn {
+  /*background-color: var(--color1);
+  color: var(--white-color);*/
+  border-radius: 7px;
+  border: 2px solid var(--color1);
+  background-color: #f0f0f0;
+  color: var(--color1);
 }
 
-.expired-btn {
-  background-color: var(--white-color);
-  border: 1px solid var(--red-color);
-  color: var(--red-color);
+.warning-btn {
+  background-color: var(--red-color);
+  color: var(--white-color);
 }
 
 .lg-btn {
@@ -137,6 +143,37 @@ hr {
   border: 1px solid var(--red-color);
   width: 150px;
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  margin-top: 1%;
+  margin-right: 3%;
+  z-index: -2;
+}
+
+.bar {
+  height: 30px;
+  border-radius: 9px;
+}
+
+.full {
+  background-color: grey;
+  width: 100%;
+}
+
+.busyness {
+  width: 5%;
+  background-image: linear-gradient(
+    to right,
+    var(--color2, #f57c00, var(--red-color))
+  );
+}
+
+.status {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -281,9 +318,15 @@ hr {
 .option {
   margin: 2% 7% 5% 4%;
 }
-.calculators-menu a.active {
-  border-right: 5px solid var(--dark-green);
-  border-right-width: 3px;
+
+.option:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  color: #394b46; /* Change text color on hover */
+  cursor: pointer; /* Show pointer on hover */
+}
+
+.mg {
+  margin-left: 7%;
 }
 
 .tabs {
