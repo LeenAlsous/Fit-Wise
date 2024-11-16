@@ -284,8 +284,8 @@ hr {
 }
 
 .banner {
-  width: 98%;
-  height: 500px;
+  width: 75%;
+  height: 450px;
   border-radius: 12px;
 }
 @media (max-width: 820px) {
@@ -337,6 +337,12 @@ hr {
   display: none;
 }
 
+@media (min-width: 820px) {
+  .calc {
+    margin-top: 5%;
+  }
+}
+
 .center-menu {
   display: flex;
   margin: auto;
@@ -368,6 +374,11 @@ hr {
   background-color: #f0f0f0; /* Light gray background on hover */
   color: #394b46; /* Change text color on hover */
   cursor: pointer; /* Show pointer on hover */
+}
+
+.content {
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .mg {

@@ -20,6 +20,8 @@ function showCalc(evt, calcId) {
   calc = document.getElementsByClassName("calc");
   for (i = 0; i < calc.length; i++) {
     calc[i].style.display = "none";
+    document.getElementById("calories").style.display = "none";
+    document.getElementById("protein").style.display = "none";
   }
   option = document.getElementsByClassName("option");
   for (i = 0; i < option.length; i++) {
@@ -28,6 +30,10 @@ function showCalc(evt, calcId) {
     if (icon) icon.innerHTML = "";
   }
   document.getElementById(calcId).style.display = "block";
-  evt.currentTarget.querySelector(".icon").innerHTML =
-    '<i class="fa-solid fa-arrow-right blk-text"></i>';
+  if (window.matchMedia("(max-width: 820px)").matches) {
+    evt.currentTarget.className += " active";
+  } else {
+    evt.currentTarget.querySelector(".icon").innerHTML =
+      '<i class="fa-solid fa-arrow-right blk-text"></i>';
+  }
 }
